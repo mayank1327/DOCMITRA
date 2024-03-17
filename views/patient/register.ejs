@@ -1,0 +1,89 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <div class="row mt-3">
+        <h3 class="col-8 offset-2">Are you doctor?&nbsp;<a href="/DocMitra/Register/Doctor_register">Register here</a></h3>
+        <div class="col-8 offset-2">
+            <form method="POST" action="/DocMitra/register"   class="needs-validation" novalidate >
+    
+                <div class="mb-3">
+                    <label for="username" class="form-label">username</label>
+                    <input 
+                     type="text" 
+                     name="username"
+                     id="username"
+                     class="form-control" required>
+    
+                     <div class="invalid-feedback">
+                           looks good!!
+                    </div> 
+                </div>
+
+                <div >
+                    <label for="Age" class="mb-3" class="form-label">age</label>
+                    <input 
+                     type="Number" 
+                     name="age"
+                     id="age"
+                     class="form-control" required>
+    
+                     <div class="invalid-feedback">
+                           looks good!!
+                    </div> 
+                </div>
+
+                <div class="mb-3">
+                    <label for="Gender" class="form-label">gender</label>
+                    <input 
+                     type="text" 
+                     name="gender"
+                     id="gender"
+                     class="form-control" required>
+    
+                     <div class="invalid-feedback">
+                           looks good!!
+                    </div> 
+                </div>
+
+                <div class="mb-3 " >
+                    <label for="country" class="form-label">State</label>
+                    <input 
+                    id="state"
+                    type="text"
+                    name="state"
+                    class="form-control"  required>
+
+                    <div class="invalid-feedback">
+                       please mention state name
+                      </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">email</label>
+                    <input 
+                     type="email" 
+                     name="email"
+                     id="email"
+                     class="form-control" required>
+                     <div class="invalid-feedback">
+                        country name should be valid
+                       </div>
+    
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">password</label>
+                <input 
+                 type="password" 
+                 name="password"
+                 id="password"
+                 class="form-control" required>   
+                 <div class="invalid-feedback">
+                    passeword
+                   </div>
+            </div>
+               
+               <div>
+                <button class="btn btn-success" >Registered</button>
+                </div>
+                </form>
+         </div>
+    </div>
+</body>
